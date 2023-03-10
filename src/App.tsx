@@ -1,10 +1,12 @@
-import { signal, useSignal } from "@preact/signals-react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { signal, useSignal } from '@preact/signals-react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+import React from 'react'
 
-const count = signal(0);
+const count = signal(0)
 
 function App() {
+  // const [count, setCount] = React.useState(0)
   return (
     <div className="App">
       <div>
@@ -20,7 +22,7 @@ function App() {
       <div className="card">
         <button
           onClick={() => {
-            count.value++;
+            count.value++
           }}
         >
           count is {count}
@@ -30,15 +32,13 @@ function App() {
         </p>
 
         <p>
-          Tip: you can use the inspector button next to address bar to click on
-          components in the preview and open the code in the editor!
+          Tip: you can use the inspector button next to address bar to click on components in the preview and open the
+          code in the editor!
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
